@@ -1,12 +1,12 @@
 /**
- * 过期时间单位
- * s：秒
- * m：分
- * h：时
- * d：天
- * w：周
- * y：年
- * t：自定义（毫秒ms）
+ * expiration time unit
+ * s：second
+ * m：minute
+ * h：hour
+ * d：day
+ * w：week
+ * y：year
+ * t：custom (ms)
  */
 export type ExpiredUnit = 's' | 'm' | 'h' | 'd' | 'w' | 'y' | 't';
 
@@ -55,19 +55,19 @@ export class StorageUtil {
     if (val <= 0) return 0;
     const now = +new Date();
     switch (unit) {
-      case 's': // 秒
+      case 's': // second
         return now + 1000 * val;
-      case 'm': // 分
+      case 'm': // minute
         return now + 1000 * 60 * val;
-      case 'h': // 时
+      case 'h': // hour
         return now + 1000 * 60 * 60 * val;
-      case 'd': // 天
+      case 'd': // day
         return now + 1000 * 60 * 60 * 24 * val;
-      case 'w': // 周
+      case 'w': // week
         return now + 1000 * 60 * 60 * 24 * 7 * val;
-      case 'y': // 年
+      case 'y': // year
         return now + 1000 * 60 * 60 * 24 * 365 * val;
-      case 't': // 自定义
+      case 't': // custom (ms)
         return now + val;
     }
     return 0;

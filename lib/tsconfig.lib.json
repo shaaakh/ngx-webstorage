@@ -17,6 +17,9 @@
     "./index.ts"
   ],
   "angularCompilerOptions": {
-    "skipTemplateCodegen": true
-  }
+    "skipTemplateCodegen": true,
+    "strictMetadataEmit": true,
+    "enableResourceInlining": true,
+    "enableIvy": false
+  },
 }

@@ -1,25 +1,20 @@
 # angular-web-storage
 Angular decorator to save and restore of HTML5 Local&Session Storage
 
-[![NPM version](https://img.shields.io/npm/v/angular-web-storage.svg)](https://www.npmjs.com/package/angular-web-storage)
-[![Build Status](https://travis-ci.org/cipchk/angular-web-storage.svg?branch=master)](https://travis-ci.org/cipchk/angular-web-storage)
+[![NPM version](https://img.shields.io/npm/v/@shaakh/ngx-webstorage.svg)](https://www.npmjs.com/package/angular-web-storage)
+[![Build Status](https://travis-ci.org/@shaakh/ngx-webstorage.svg?branch=master)](https://travis-ci.org/mrebati/angular-web-storage)
 
-## Demo
-
-- [Live Demo](https://cipchk.github.io/angular-web-storage/)
-- [Stackblitz](https://stackblitz.com/edit/angular-web-storage)
 
 ## Version
 
-- Angular 6 `3.x`
-- Angular 7 `4.x`
+- Angular 9 `1.x`
 
 ### 1、Usage
 
-install `angular-web-storage` from `npm`
+install `@prime-framework/ngx-web-storage` from `npm`
 
 ```
-npm install angular-web-storage --save
+npm install @prime-framework/ngx-web-storage --save
 ```
 
 Import the `AngularWebStorageModule` in your module.

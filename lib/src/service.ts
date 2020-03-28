@@ -18,10 +18,10 @@ export class StorageService {
   }
 
   /**
-   * 删除指定key，如：
-   * - `remove('key')` 删除 `key` 键
-   * - `remove(/BMap_\w+/)` 批量删除所有 BMap_ 开头的键
-   * @param key 键名或正则表达式
+   * delete the specified key such as:
+   * - remove('key')
+   * - remove(/BMap_\w+/)
+   * @param key Key name or regular expression
    */
   remove(key: string | RegExp) {
     if (typeof key === 'string') {
